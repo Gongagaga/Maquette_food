@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+font-face {
+    font-family: Poppins;
+    src: url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    line-height: 1.8;
+    
+}
+body{
+    background: #dedede ;
+}
+header {
+    background-image: url("assets/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#SaidAbtUs {
+    background-image: url("assets/bg2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#Contact {
+    background-image: url("assets/bg3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:40%;
+}
+
+.rose {
+    font-weight: bolder;
+    font-size:larger;
+    color:#ff0157;
+}
+
+.btn {
+    background-color: #ff0157;
+    color : white;
+}
+.images-plats
+{
+    width: 80%;
+}
+.plats {
+    background: #ffffff;
+}
+
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.img-avis
+{
+    border-radius: 100%;
+    width: 30%;
+}
+.separator
+{
+    height: 1px;
+    border-radius: 1px;
+    width: 100%;
+    background-color: darkgray;
+}
+form
+{
+    width : 70%;
+}
+input:not([type="submit"]), textarea {
+    border: 1px solid darkgray;
+    width : 100%;
+}
