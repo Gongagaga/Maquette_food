@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <link rel="stylesheet" href="normalize.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,40 +17,45 @@
     <header class="text-white">
         <div class="container mx-auto">
             <!-- menu mobile -->
-            <nav class="block lg:hidden">
-                <div id="navbar" class="flex flex-row justify-between lg:hidden p-4 items-center">
-                    <h1 class="text-5xl text-white text-semibold">Food<span class="rose">.</span></h1>
-                    <a href="#" class="text-white">
-                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 toggle-menu">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                      </svg>
-                    </a>
-                  </div>
-                  <ul id="menu-items" class="flex flex-col text-white lg:flex-row justify-center items-center lg:justify-normal mt-6 lg:mt-0 p-0">
-                    <li class="py-4"><a href="#ACG" class="text-white">Home</a></li>
-                    <li class="py-4"><a href="#AboutUs" class="text-white">About</a></li>
-                    <li class="py-4"><a href="#OurMenu" class="text-white">Menu</a></li>
-                    <li class="py-4"><a href="#Expert" class="text-white">Expert</a></li>
-                    <li class="py-4"><a href="#SaidAbtUs" class="text-white">Testimonials</a></li>
-                    <li class="py-4"><a href="#Contact" class="text-white">Contact</a></li>
-                  </ul>
-            </nav>
+            <div class="block lg:hidden">
+                <nav>
+                    <div class="flex flex-row justify-between lg:hidden p-4 items-center">
+                        <h1 class="text-5xl text-white text-semibold">Food<span class="rose">.</span></h1>
+                        <a href="#" class="text-white">
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 toggle-menu">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                          </svg>
+                        </a>
+                      </div>
+                      <ul id="menu-items" class="flex flex-col text-white lg:flex-row justify-center items-center lg:justify-normal mt-6 lg:mt-0 p-0">
+                        <li class="py-4"><a href="#ACG" class="text-white">Home</a></li>
+                        <li class="py-4"><a href="#AboutUs" class="text-white">About</a></li>
+                        <li class="py-4"><a href="#OurMenu" class="text-white">Menu</a></li>
+                        <li class="py-4"><a href="#Expert" class="text-white">Expert</a></li>
+                        <li class="py-4"><a href="#SaidAbtUs" class="text-white">Testimonials</a></li>
+                        <li class="py-4"><a href="#Contact" class="text-white">Contact</a></li>
+                      </ul>
+                </nav>
+            </div>
             <!-- menu pc -->
-            <nav class="hidden lg:flex justify-between p-8">
-                <h1 class="text-5xl text-white text-semibold">Food<span class="rose">.</span></h1>
-                <ul class="flex text-white flex-row items-center mt-6 lg:mt-0 p-0 gap-6">
-                    <li class="py-4"><a href="#ACG" class="text-white">Home</a></li>
-                    <li class="py-4"><a href="#AboutUs" class="text-white">About</a></li>
-                    <li class="py-4"><a href="#OurMenu" class="text-white">Menu</a></li>
-                    <li class="py-4"><a href="#Expert" class="text-white">Expert</a></li>
-                    <li class="py-4"><a href="#SaidAbtUs" class="text-white">Testimonials</a></li>
-                    <li class="py-4"><a href="#Contact" class="text-white">Contact</a></li>
-                </ul>
-            </nav>
+            <nav>
+                <div id="navbar" class="hidden lg:flex justify-between p-8">
+                  <h1 class="couleurs">Food<span class="rose">.</span></h1>
+                  <ul id="menu-items" class="flex flex-row items-center mt-6 lg:mt-0 p-0 gap-6">
+                    <li class="py-4"><a href="#ACG" class="couleurs">Home</a></li>
+                    <li class="py-4"><a href="#AboutUs" class="couleurs">About</a></li>
+                    <li class="py-4"><a href="#OurMenu" class="couleurs">Menu</a></li>
+                    <li class="py-4"><a href="#Expert" class="couleurs">Expert</a></li>
+                    <li class="py-4"><a href="#SaidAbtUs" class="couleurs">Testimonials</a></li>
+                    <li class="py-4"><a href="#Contact" class="couleurs">Contact</a></li>
+                  </ul>
+                </div>
+              </nav>
+           
         </div>
         <!-- Always Choose Good -->
 
-        <section id="ACG" class="py-20">
+        <section id="ACG">
             <div class="container mx-auto p-8 text-center">
                 <h2 class="text-3xl pb-6">Always Choose Good</h2>
                 <p class="pb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae laborum enim accusamus dignissimos voluptatem maxime incidunt ab veniam hic voluptatum fugiat, exercitationem voluptas quam nesciunt unde magni deleniti tempore similique. </p>
@@ -64,45 +68,47 @@
 
         <!-- About Us -->
 
-        <section id="AboutUs" class="py-20">
-            <div class="container mx-auto flex flex-col p-8">
-                <h2 class="text-3xl pb-6 text-center"><span class="rose">A</span>bout Us</h2>
-                <p class="font-bold tracking-wide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore facere, itaque eligendi autem atque doloribus natus ratione porro. Aperiam dignissimos alias distinctio eius quis nam aliquam rerum optio fuga explicabo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates beatae explicabo eveniet id autem et aliquam amet, laudantium aperiam obcaecati odio quis? Voluptate sequi corrupti possimus officiis repellendus provident deserunt?</p>
-                <p class="font-bold tracking-wide mt-6 mb-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe eligendi incidunt numquam recusandae. Eius quod sapiente laboriosam, quam beatae facilis impedit similique laudantium libero, modi consectetur? Perferendis facilis excepturi ipsum?</p>
+        <section id="AboutUs">
+            <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 p-8 gap-8 items-center">
+                <div>
+                    <h2 class="text-3xl pb-6 text-center"><span class="rose">A</span>bout Us</h2>
+                    <p class="font-bold tracking-wide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore facere, itaque eligendi autem atque doloribus natus ratione porro. Aperiam dignissimos alias distinctio eius quis nam aliquam rerum optio fuga explicabo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates beatae explicabo eveniet id autem et aliquam amet, laudantium aperiam obcaecati odio quis? Voluptate sequi corrupti possimus officiis repellendus provident deserunt?</p>
+                    <p class="font-bold tracking-wide mt-6 mb-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe eligendi incidunt numquam recusandae. Eius quod sapiente laboriosam, quam beatae facilis impedit similique laudantium libero, modi consectetur? Perferendis facilis excepturi ipsum?</p>
+                </div>
                 <img src="./assets/img1.jpg" alt="image de pizza">
             </div>
         </section>
 
         <!-- Our Menu -->
 
-        <section id="OurMenu" class="py-20">
+        <section id="OurMenu">
             <div class="container mx-auto flex flex-col items-center p-8 md:p-0 lg:p-0">
                 <div class="flex flex-col justify-center items-center">
                     <h2 class="text-3xl pb-6"><span class="rose">O</span>ur Menu</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-6 p-8">
-                    <div class="p-4 plats rounded-lg flex flex-col items-center">
+                    <div class="p-4 plats rounded-lg flex flex-col items-center card">
                         <div class="images-plats"><img src="./assets/menu1.jpg" alt="menu1" class="rounded-sm"></div>
                         <p class="text-xl font-semibold">Special Salads</p>
                     </div>
-                    <div class="p-4 plats rounded-lg flex flex-col items-center">
+                    <div class="p-4 plats rounded-lg flex flex-col items-center card">
                         <div class="images-plats"><img src="./assets/menu2.jpg" alt="menu2" class="rounded-sm"></div>
                         <p class="text-xl font-semibold">Special Soup</p>
                     </div>
-                    <div class="p-4 plats rounded-lg flex flex-col items-center">
+                    <div class="p-4 plats rounded-lg flex flex-col items-center card">
                         <div class="images-plats"><img src="./assets/menu3.jpg" alt="menu3" class="rounded-sm"></div>
                         <p class="text-xl font-semibold">Special Pasta</p>
                     </div>
-                    <div class="p-4 plats rounded-lg flex flex-col items-center">
+                    <div class="p-4 plats rounded-lg flex flex-col items-center card">
                         <div class="images-plats"><img src="./assets/menu4.jpg" alt="menu4" class="rounded-sm"></div>
                         <p class="text-xl font-semibold">Special Salads</p>
                     </div>
-                    <div class="p-4 plats rounded-lg flex flex-col items-center">
+                    <div class="p-4 plats rounded-lg flex flex-col items-center card">
                         <div class="images-plats"><img src="./assets/menu5.jpg" alt="menu5" class="rounded-sm"></div>
                         <p class="text-xl font-semibold">Special Soup</p>
                     </div>
-                    <div class="p-4 plats rounded-lg flex flex-col items-center">
+                    <div class="p-4 plats rounded-lg flex flex-col items-center card">
                         <div class="images-plats"><img src="./assets/menu6.jpg" alt="menu6" class="rounded-sm"></div>
                         <p class="text-xl font-semibold">Special Pasta</p>
                     </div>
@@ -113,7 +119,7 @@
 
         <!-- Our Kitchen Expert -->
 
-        <section id="Expert" class="py-20">
+        <section id="Expert">
             <div class="container mx-auto p-8 md:p-0 lg:p-0">
                 <div class="flex flex-col justify-center items-center">
                     <h2 class="text-3xl pb-6">Our Kitchen <span class="rose">E</span>xpert</h2>
@@ -142,7 +148,7 @@
 
         <!-- They Said About Us -->
 
-        <section id="SaidAbtUs" class="py-20">
+        <section id="SaidAbtUs">
             <div class="container mx-auto text-white">
                 <div class="flex flex-col justify-center items-center text-center mb-6">
                     <h2 class="text-3xl pb-6">They <span class="rose">S</span>aid About Us</h2>
@@ -180,7 +186,7 @@
                     <h2 class="text-3xl pb-6"><span class="rose">C</span>ontact Us</h2>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
                 </div>
-                <form action="" class="bg-white p-8 rounded-lg">
+                <form action="" class="bg-white p-8 rounded-lg card">
                     <p>Send Message</p>
                     <input type="text" placeholder="Name" class="mt-4"></input>
                     <input type="text" placeholder="Email" class="mt-4"></input>
@@ -197,14 +203,29 @@
     <script type="module" src="./script.js"></script>
     <script type="module">
         $(document).ready(function() {
-        // Cacher le menu au chargement de la page
-        $('#menu-items').hide();
+            // Cacher le menu au chargement de la page
+            $('#menu-items').hide();
 
-        // gérer le clic sur le lien du menu burger
-        $('.toggle-menu').click(function(event) {
-            event.preventDefault();
-            $('#menu-items').slideToggle();
+            // gérer le clic sur le lien du menu burger
+            $('.toggle-menu').click(function(event) {
+                event.preventDefault();
+                $('#menu-items').slideToggle();
+            });
         });
+        $(window).on('scroll', function() {
+            var navbar = $('#navbar');
+            var coloris = $('.couleurs')
+            var scroll = $(window).scrollTop();
+
+            if (scroll >= 100) {
+                navbar.addClass('scrolled');
+                coloris.addClass('text-black');
+                coloris.removeClass('text-white');
+            } else {
+                navbar.removeClass('scrolled');
+                coloris.addClass('text-white');
+                coloris.removeClass('text-black');
+            }
         });
     </script>
 </body>
